@@ -81,16 +81,13 @@ export function toShortForm(question: Question): string {
  */
 export function toMarkdown(question: Question): string {
     let result = `# ${question.name}\n`;
-
     result += `${question.body}\n`;
-
     if (question.options.length > 0) {
         question.options.forEach((option) => {
             result += `- ${option}\n`;
         });
     }
-
-    return result.trim(); // Trim any trailing newlines
+    return result.trim();
 }
 
 /**
