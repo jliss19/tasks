@@ -14,7 +14,6 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
-<<<<<<< HEAD
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
@@ -32,6 +31,12 @@ function App(): React.JSX.Element {
                 >
                     Log Hello World
                 </Button>
+                <Counter></Counter>
+                <RevealAnswer></RevealAnswer>
+                <ChangeType></ChangeType>
+                <StartAttempt></StartAttempt>
+                <TwoDice></TwoDice>
+                <CycleHoliday></CycleHoliday>
             </div>
             <div style={{ border: "10px solid red", padding: "4px" }}>
                 <Container>
@@ -69,20 +74,6 @@ function App(): React.JSX.Element {
                     </Row>
                 </Container>
             </div>
-=======
-            <hr></hr>
-            <Counter></Counter>
-            <hr />
-            <RevealAnswer></RevealAnswer>
-            <hr />
-            <StartAttempt></StartAttempt>
-            <hr />
-            <TwoDice></TwoDice>
-            <hr />
-            <ChangeType></ChangeType>
-            <hr />
-            <CycleHoliday></CycleHoliday>
->>>>>>> upstream/task-state
         </div>
     );
 }
