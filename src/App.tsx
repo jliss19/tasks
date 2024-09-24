@@ -31,6 +31,12 @@ function App(): React.JSX.Element {
                 >
                     Log Hello World
                 </Button>
+                <Counter></Counter>
+                <RevealAnswer></RevealAnswer>
+                <ChangeType></ChangeType>
+                <StartAttempt></StartAttempt>
+                <TwoDice></TwoDice>
+                <CycleHoliday></CycleHoliday>
             </div>
             <div style={{ border: "10px solid red", padding: "4px" }}>
                 <Container>
