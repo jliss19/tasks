@@ -7,6 +7,10 @@ import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -31,11 +35,25 @@ function App(): React.JSX.Element {
                 >
                     Log Hello World
                 </Button>
+                <hr></hr>
+                <DoubleHalf></DoubleHalf>
+                <hr></hr>
+                <ChooseTeam></ChooseTeam>
+                <hr></hr>
+                <ColoredBox></ColoredBox>
+                <hr></hr>
+                <ShoveBox></ShoveBox>
+                <hr></hr>
                 <Counter></Counter>
+                <hr />
                 <RevealAnswer></RevealAnswer>
-                <ChangeType></ChangeType>
+                <hr />
                 <StartAttempt></StartAttempt>
+                <hr />
                 <TwoDice></TwoDice>
+                <hr />
+                <ChangeType></ChangeType>
+                <hr />
                 <CycleHoliday></CycleHoliday>
             </div>
             <div style={{ border: "10px solid red", padding: "4px" }}>
