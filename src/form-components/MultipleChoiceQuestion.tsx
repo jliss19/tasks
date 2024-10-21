@@ -8,31 +8,24 @@ export function MultipleChoiceQuestion({
     options: string[];
     expectedAnswer: string;
 }): React.JSX.Element {
-    const [selectedChoice, setSelectedChoice] = useState(options[0]);
-    const isCorrect = selectedChoice === expectedAnswer;
+    const [selectedAnswer, setSelectedAnswer] = useState<string>(options[0]);
 
     return (
         <div>
             <h3>Multiple Choice Question</h3>
-            <Form>
-                <Form.Group controlId="multipleChoiceQuestion">
-                    <Form.Label>Select an answer:</Form.Label>
-                    <Form.Control
-                        as="select"
-                        value={selectedChoice}
-                        onChange={(e) => {
-                            setSelectedChoice(e.target.value);
-                        }}
-                    >
-                        {options.map((option, index) => (
-                            <option key={index} value={option}>
-                                {option}
-                            </option>
-                        ))}
-                    </Form.Control>
-                </Form.Group>
-            </Form>
-            <div>{isCorrect ? "✔️" : "❌"}</div>
+            <Form.Select
+                value={selectedAnswer}
+                onChange={(e) => {
+                    setSelectedAnswer(e.target.value);
+                }}
+            >
+                {options.map((option) => (
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
+                ))}
+            </Form.Select>
+            <p>{selectedAnswer === expectedAnswer ? "✔️" : "❌"}</p>
         </div>
     );
 }
